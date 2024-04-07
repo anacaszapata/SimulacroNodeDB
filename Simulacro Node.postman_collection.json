@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "c11c6fd5-7882-4a02-8feb-d37f40478468",
+		"name": "Simulacro Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33481572"
+	},
+	"item": [
+		{
+			"name": "readstudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/estudiante",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createstudents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Ana\",\n    \"identification\" : \"hola784\", \n    \"age\" : 22\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/estudiante",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatestudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/estudiante/660ea0bbe298503083a42e15",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante",
+						"660ea0bbe298503083a42e15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletestudent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/estudiante/660ea0bbe298503083a42e15",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante",
+						"660ea0bbe298503083a42e15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
